@@ -10,7 +10,9 @@ address public owner ;
 constructor () {
     owner = msg.sender ;
 }
-    
+
+    function Deposit () public payable{
+}
 
     function Transfer(address payable _to , uint _amount ) public payable  {
 require(_amount > 0 ,"you can not Send Zero Ether" );
